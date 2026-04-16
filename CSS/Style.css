@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #0077b6;
+    padding: 15px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.logo h1 {
+    color: white;
+}
+
+.links {
+    list-style: none;
+    display: flex;
+}
+
+.links li {
+    margin: 0 15px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.links a:hover {
+    color: #ffd700;
+    text-decoration: underline;
+}
+
+.home {
+    width: 100%;
+    min-height: 85vh;
+    background-image: url('../Images/helwan.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    border: 1px solid gray;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+th {
+    background-color: #0077b6;
+    color: white;
+}
+
+form {
+    text-align: left;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    display: block;
+}
+
+footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+    }
+    .links {
+        margin-top: 15px;
+    }
+}
